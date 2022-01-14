@@ -1,0 +1,36 @@
+@use "../utils/variables";
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #FBFEFD;
+    // background-color: red;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+.nav {
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 5rem;
+    font-weight: 500;
+    &__img {
+        width: 5rem;
+    }
+    &__item {
+        display: inline-block;
+        margin: .6rem;
+    }
+    &__link {
+        transition: .3s;
+        color: black;
+        &:hover {
+            color: #069C54;
+        }
+        &--primary {
+            color: #069C54;
+        }
+    }
+}
