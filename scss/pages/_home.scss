@@ -14,15 +14,16 @@ body {
 // }
 .home {
     // background-color: red;
+    // background-color: brown;
     display: flex;
     justify-content: space-around;
     width: 80%;
     margin: auto;
+    height: calc(100vh - #{$height-header});
     &__menu {
         margin: auto 0;
     }
     &__img {
-        width: 25rem;
         margin-top: 2rem;
     }
     &__title {
@@ -34,11 +35,27 @@ body {
         padding-bottom: 2rem;
     }
 }
-.btn {
-    font-size: 1rem;
-    padding: .7em .6em;
-    background-color: #069C54;
-    color: white;
-    border-radius: 7px;
-    font-weight: 500;
+.services {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    // background-color: blueviolet;
+    height: calc(100vh - #{$height-header});
+    &__name-nav {
+        color: $colour-primary;
+    }
+    &__img {
+        width: 50%;
+        padding: 3rem;
+    }
+    &__menu {
+        padding: 3rem;
+        margin: auto 0;
+    }
+    &__title {
+        font-size: 2rem;
+    }
+    &__description {
+        color: black;
+    }
 }

@@ -18,14 +18,13 @@ img {
 ul {
   list-style: none; }
 
-@use "../utils/variables";
 .header {
   width: 100%;
   position: sticky;
   top: 0;
   z-index: 100;
   background-color: #FBFEFD;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
 
 .nav {
   max-width: 1024px;
@@ -41,12 +40,13 @@ ul {
     display: inline-block;
     margin: .6rem; }
   .nav__link {
-    transition: .3s;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
     color: black; }
     .nav__link:hover {
-      color: #069C54; }
+      border-bottom: 2px solid #069C54; }
     .nav__link--primary {
-      color: #069C54; }
+      border-bottom: 2px solid #069C54; }
 
 :root {
   --body-font: 'Poppins', sans-serif; }
@@ -59,11 +59,11 @@ body {
   display: flex;
   justify-content: space-around;
   width: 80%;
-  margin: auto; }
+  margin: auto;
+  height: calc(100vh - 5rem); }
   .home__menu {
     margin: auto 0; }
   .home__img {
-    width: 25rem;
     margin-top: 2rem; }
   .home__title {
     font-size: 4rem;
@@ -71,6 +71,24 @@ body {
   .home__description {
     font-size: 2.3rem;
     padding-bottom: 2rem; }
+
+.services {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  height: calc(100vh - 5rem); }
+  .services__name-nav {
+    color: #069C54; }
+  .services__img {
+    width: 50%;
+    padding: 3rem; }
+  .services__menu {
+    padding: 3rem;
+    margin: auto 0; }
+  .services__title {
+    font-size: 2rem; }
+  .services__description {
+    color: black; }
 
 .btn {
   font-size: 1rem;

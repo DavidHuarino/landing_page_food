@@ -1,4 +1,4 @@
-@use "../utils/variables";
+@import "../utils/variables";
 .header {
     width: 100%;
     position: sticky;
@@ -6,7 +6,8 @@
     z-index: 100;
     background-color: #FBFEFD;
     // background-color: red;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    // transition: .4s;
 }
 .nav {
     max-width: 1024px;
@@ -14,23 +15,29 @@
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    height: 5rem;
+    height: $height-header;
     font-weight: 500;
+
     &__img {
         width: 5rem;
     }
     &__item {
         display: inline-block;
         margin: .6rem;
+        
     }
     &__link {
-        transition: .3s;
+        border-bottom: 2px solid transparent;
+        transition: .4s;
         color: black;
         &:hover {
-            color: #069C54;
+            // color: #069C54;
+            border-bottom: 2px solid $colour-primary;
         }
         &--primary {
-            color: #069C54;
+            // color: #069C54;
+            border-bottom: 2px solid $colour-primary;
         }
     }
 }
+
